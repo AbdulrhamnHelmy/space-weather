@@ -13,7 +13,7 @@ body {
   background: linear-gradient(135deg,
       #3b0a59,
       #602184,
-      #7b1fa2,
+      #502065,
       #115963,
       #8e24aa);
 
@@ -178,11 +178,11 @@ p {
 
 .card:hover {
   background: linear-gradient(145deg, #7a31a8, #781de7);
-  transform: translateY(-3px) scale(1.02);
+  transform: translateY(-8px) scale(1.02) ;
+/* transform: translateY(-8px) ; */
   box-shadow: 0 0 5px #8c3b9baa, 0 0 5px #7b1fa2aa;
   transition: 0.3s ease;
 }
-
 .card img {
   height: 280px;
 }
