@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Satellites & Space Weather</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div>
+        <img class="logo_nasa" src="images\logo_nasa.png" alt="" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#effects">Effects</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero sub-hero">
+      <h1>
+        The Space Weather Research and Technology Applications (SPARTA) Center
+      </h1>
+    </section>
+
+    <!-- Content -->
+    <section class="content-page">
+      <img src="images/AuroraCrater_ISS_4256_NASA_1600x900.jpg" alt="" />
+      <div>
+        <p>
+          Focus: Ionospheric disturbances and communications SPARTA works on
+          improving predictions of space-weather effects on the ionosphere,
+          which directly impacts navigation systems, GPS accuracy, radio
+          signals, and aviation communications.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>
+        &copy; <span id="year"></span> Space Weather Project. All rights
+        reserved.
+      </p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

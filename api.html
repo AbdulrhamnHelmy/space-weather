@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Space Weather Alerts</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div>
+        <img class="logo_nasa" src="images\logo_nasa.png" alt="" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#alerts">Alerts</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <h1 class="space-alert">⚡ Know Space Weather Alerts in Real Time ⚡</h1>
+      <div>
+        <h1 style="text-align: center">🌌 Space Weather Alerts</h1>
+        <button class="btn-api" id="checkBtn">Check Updates</button>
+        <div class="alearts-api" id="alerts">No data yet...</div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>
+        &copy; <span id="year"></span> Space Weather Project. All rights
+        reserved.
+      </p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="api.js"></script>
+  </body>
+</html>

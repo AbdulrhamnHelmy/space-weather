@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Satellites & Space Weather</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div>
+        <img class="logo_nasa" src="images\logo_nasa.png" alt="" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#effects">Effects</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero sub-hero">
+      <h1>
+        The Space Weather Operational Readiness Development (SWORD) Center of
+        Excellence
+      </h1>
+    </section>
+
+    <!-- Content -->
+    <section class="content-page">
+      <img src="images/swot-illustration-1041.jpeg" alt="" />
+      <div>
+        <p>
+          Focus: Satellites, orbital dynamics, and space debris SWORD is
+          dedicated to forecasting how space weather affects satellites, orbital
+          environments, and debris management, helping protect infrastructure in
+          Earth's orbit.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>
+        &copy; <span id="year"></span> Space Weather Project. All rights
+        reserved.
+      </p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

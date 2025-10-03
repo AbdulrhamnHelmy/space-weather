@@ -1,0 +1,486 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(
+    135deg,
+    #3663a1,
+    #333391,
+    #29067c,
+    #4361ee,
+    #4cc9f0
+  );
+
+  color: #f2f2f2;
+  line-height: 1.6;
+}
+/* ========= Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background: linear-gradient(90deg, #451ea0, #3352b1, #4a23a7);
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  fill-opacity: calc(20%);
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #cfd7da;
+}
+.navbar h1 {
+  font-size: 25px;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.navbar a {
+  text-decoration: none;
+  color: #8fe5ff;
+  font-weight: 800;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #e0e0e0;
+  /* margin-bottom: 20px; */
+}
+.logo_nasa {
+  width: 160px;
+  height: 52px;
+}
+
+.im_h {
+  position: relative;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  animation: fadeIn 1.5s ease-in;
+}
+.hero img {
+  width: 1600px;
+  height: 750px;
+  border-radius: 20px;
+  filter: opacity(70%);
+}
+.hero .im_h .under {
+  position: absolute;
+  margin-bottom: 200px;
+  width: 1300px;
+}
+.under h1 {
+  font-size: 40px;
+  color: #8fe5ff;
+  align-items: start;
+}
+.under p {
+  font-size: 23px;
+  font-weight: bold;
+  margin-top: 30px;
+  color: #e0e0e0;
+  text-align: justify;
+  line-height: 1.9;
+}
+.span_hero {
+  margin-left: 350px;
+}
+/* ========= about  */
+
+.about p {
+  font-weight: bold;
+  font-size: 23px;
+}
+.about ul li {
+  font-weight: bold;
+  color: #e0e0e0;
+}
+
+.sub-hero {
+  text-align: center;
+}
+.bbb {
+  font-weight: 500;
+}
+
+/* ========= Section Style */
+section {
+  padding: 100px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 2.2rem;
+  color: #8fe5ff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #e0e0e0;
+}
+
+/* ========= Cards Section */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 100px;
+  margin-top: 40px;
+}
+
+.card {
+  background: #4040be;
+  color: #ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  width: 310px;
+  margin-left: -70px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease, background 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+.card:hover {
+  transform: translateY(-8px);
+  background-color: #531ece;
+  box-shadow: 0 4px 5px rgba(37, 109, 131, 0.6);
+}
+.card img {
+  height: 280px;
+}
+.card p {
+  font-weight: 700;
+  color: #e0e0e0;
+}
+
+.cards .card h3 {
+  color: #8fe5ff;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.cards a {
+  text-decoration: none;
+  color: #f3ecec;
+}
+
+.img-effe {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+}
+.span-solution {
+  margin-left: 310px;
+}
+
+/* ======== alarm  */
+.h1-api {
+  color: #facc15;
+}
+
+.btn-api {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 15px 25px;
+  margin: 20px;
+  margin-left: 510px;
+  border-radius: 6px;
+  /* align-items: center; */
+  /* text-align: center; */
+  cursor: pointer;
+}
+
+.btn-api:hover {
+  background: #1d4ed8;
+}
+
+.alearts-api {
+  background: #e21d1dbb;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 6px;
+  max-width: 900px;
+  text-align: left;
+  font-weight: bold;
+}
+.space-alert {
+  text-align: center;
+  font-size: 28px;
+  color: #ff3333;
+  font-weight: bold;
+  animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0.5;
+  }
+}
+
+/* ========== Kids Poster */
+/* .kids .poster {
+  text-align: center;
+}
+.poster-section img {
+  width: 1200px;
+  height: 700px;
+  border-radius: 20px;
+  animation: fadeIn 1.5s ease-in;
+}
+.poster-section p {
+  font-weight: bold;
+}
+
+.kids img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+  animation: fadeIn 1.5s ease-in;
+} */
+
+/* ========== video  */
+.h2_video {
+  margin-bottom: -20px;
+}
+.vedio {
+  width: 950px;
+  height: 600px;
+  margin-left: 110px;
+  /* margin-top: 20px; */
+}
+
+.vedio-coronal {
+  width: 1000px;
+  height: 600px;
+  margin-top: -170px;
+  border-radius: 5px;
+}
+/* ========== Content Pages */
+.sub-hero p {
+  font-weight: bold;
+}
+.content-page {
+  text-align: center;
+}
+
+.content-page img {
+  width: 100%;
+  margin-top: -180px;
+  height: 700px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+  animation: fadeIn 1s ease-in;
+}
+.content-page .h333 {
+  text-align: start;
+}
+.content-page p {
+  text-align: justify;
+  line-height: 1.8;
+  font-size: 19px;
+  font-weight: bold;
+  color: #e0e0e0;
+}
+.contact h2 {
+  color: #77dfff;
+}
+.contact p {
+  font-weight: bold;
+}
+.histogram {
+  width: 1000px;
+  height: 500px;
+  margin-bottom: 10px;
+  /* margin-top: 150px; */
+}
+
+/* Footer */
+.footer {
+  background: linear-gradient(
+    135deg,
+    #1b3a66,
+    #333391,
+    #29067c,
+    #4361ee,
+    #4cc9f0
+  );
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+  margin-top: 40px;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+  font-size: 0.9rem;
+  color: #e0e0e0;
+  height: 70px;
+}
+
+/* ========= Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========= Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .navbar {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .logo_nasa {
+    width: 120px;
+    height: 42px;
+    margin-top: -4px;
+  }
+  .hero img {
+    width: 600px;
+    height: 350px;
+    border-radius: 20px;
+    filter: opacity(50%);
+  }
+  .hero .im_h .under {
+    position: absolute;
+    margin-bottom: 30px;
+    width: 500px;
+  }
+  .under h1 {
+    font-size: 25px;
+    color: #00bfff;
+  }
+  .under p {
+    font-size: 15px;
+    color: white;
+    width: 100px;
+  }
+
+  .poster-section img {
+    width: 600px;
+    height: 400px;
+    margin-left: 20px;
+    border-radius: 20px;
+    animation: fadeIn 1.5s ease-in;
+  }
+}
+
+@media (max-width: 849px) {
+  .hero img {
+    width: 100%;
+    height: 450px;
+    border-radius: 20px;
+    filter: opacity(55%);
+  }
+  .hero .im_h .under {
+    position: absolute;
+    margin-bottom: 110px;
+    width: 90%;
+  }
+  .under h1 {
+    font-size: 30px;
+    color: #00bfff;
+    margin-bottom: 20px;
+  }
+  .under p {
+    font-size: 20px;
+    color: white;
+    width: 650px;
+    margin: auto;
+  }
+  .span_hero {
+    margin-left: 0px;
+  }
+  .about p {
+    width: 750px;
+    text-align: justify;
+    margin-left: 15px;
+  }
+
+  .poster-section img {
+    width: 100%;
+    height: 450px;
+    border-radius: 20px;
+    animation: fadeIn 1.5s ease-in;
+  }
+  .poster-section p {
+    margin-left: 35px;
+    text-align: justify;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 90px;
+    margin-top: 40px;
+    width: 200px;
+    margin-left: 100px;
+  }
+
+  .span-solution {
+    margin-left: 0px;
+    text-align: justify;
+  }
+  .poster-section img {
+    width: 750px;
+    height: 450px;
+    border-radius: 20px;
+    animation: fadeIn 1.5s ease-in;
+    margin-left: 19px;
+  }
+  .vedio {
+    width: 750px;
+    height: 600px;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  .vedio-coronal {
+    width: 700px;
+    height: 400px;
+    margin-top: -170px;
+    border-radius: 5px;
+  }
+}

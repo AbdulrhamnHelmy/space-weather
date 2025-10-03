@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Communication & Space Weather</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div>
+        <img class="logo_nasa" src="images\logo_nasa.png" alt="" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#effects">Effects</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero sub-hero">
+      <h1>What is a Solar Flare?</h1>
+      <p class="bbb">
+        It is glowing energy that is released from the Sun at the speed of light
+        into space and can reach our atmosphere in a short time
+      </p>
+    </section>
+
+    <!-- Content -->
+    <section class="content-page">
+      <img src="images/animated-gif-x28-oct2003.webp" alt="" />
+      <div>
+        <!-- <h3 class="h333">What causes a solar storm?</h3> -->
+        <p>
+          Solar flares are giant explosions on the sun that send energy, light
+          and high speed particles into space. These flares are often associated
+          with solar magnetic storms known as coronal mass ejections (CMEs). The
+          number of solar flares increases approximately every 11 years,
+          <br />
+          <br />
+          The biggest flares are known as "X-class flares" based on a
+          classification system that divides solar flares according to their
+          strength. The smallest ones are A-class (near background levels),
+          followed by B, C, M and X. Similar to the Richter scale for
+          earthquakes, each letter represents a 10-fold increase in energy
+          output. So an X is ten times an M and 100 times a C. Within each
+          letter class there is a finer scale from 1 to 9.
+        </p>
+      </div>
+      <div style="margin-top: 180px">
+        <h2
+          class="h333"
+          style="
+            margin-bottom: 200px;
+            text-align: center;
+            margin-top: -170px;
+            color: aliceblue;
+          "
+        >
+          Histogram
+        </h2>
+
+        <img
+          class="histogram"
+          src="images/d433b2a8-da7d-431a-9d31-42c413c9ae49 (1).png"
+          alt=""
+        />
+      </div>
+
+      <div>
+        <h2 style="margin-top: 80px; color: #f3ecec">
+          How Solar Flares Affect Earth
+        </h2>
+        <video
+          style="margin-top: -10px"
+          class="vedio-coronal"
+          controls
+          autoplay
+          loop
+          muted
+          src="videos/12640_Flare_Flux-Compatible.webm"
+        ></video>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>
+        &copy; <span id="year"></span> Space Weather Project. All rights
+        reserved.
+      </p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aviation & Space Weather</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div>
+        <img class="logo_nasa" src="images\logo_nasa.png" alt="" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#effects">Effects</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero sub-hero">
+      <h1>Coronal mass ejection (CME)</h1>
+      <p style="text-align: justify; margin-top: 15px" class="bbb">
+        A coronal mass ejection (CME) is an enormous cloud of electrically
+        charged gas, called plasma, that erupts from the Sun. A single coronal
+        mass ejection can blast billions of tons of material into the solar
+        system all at once. CMEs occur in the outer atmosphere of the Sun,
+        called the corona, and often look like giant bubbles bursting from the
+        Sun
+      </p>
+    </section>
+
+    <!-- Content -->
+    <section class="content-page">
+      <video
+        class="vedio-coronal"
+        controls
+        autoplay
+        loop
+        muted
+        src="videos/aaaa.mp4"
+      ></video>
+      <div>
+        <p style="margin-top: 20px">
+          When they interact with Earth's magnetic environment, CMEs can: induce
+          electrical currents that flow through power grids, potentially
+          damaging components such as transformers, relays, and circuit
+          breakers, leading to power outages. temporarily heat up Earth’s upper
+          atmosphere, causing it to swell and increase drag on some
+          Earth-orbiting satellites, which makes the satellites slow down and
+          lose altitude. bombard Earth with charged particles that interact with
+          atoms and molecules in Earth’s atmosphere to create the aurora
+          borealis and australis (northern and southern lights)
+        </p>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <p>
+        &copy; <span id="year"></span> Space Weather Project. All rights
+        reserved.
+      </p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Power Grids & Space Weather</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div>
+        <img class="logo_nasa" src="images\logo_nasa.png" alt="" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#effects">Effects</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero sub-hero">
+      <h1>Radiation Storms</h1>
+      <p class="bbb">
+        They are high-speed charged particles that were triggered by solar
+        eruptions.
+      </p>
+    </section>
+
+    <!-- Content -->
+    <section class="content-page">
+      <img
+        src="images/sep-spacecraft-1080-ezgif-com-video-to-gif-converter.webp"
+        alt=""
+      />
+      <div>
+        <p>
+          High-speed particles from solar eruptions can sometimes: get past most
+          of Earth’s magnetic defenses, following Earth’s magnetic field lines
+          toward the north and south poles, where they enter our atmosphere and
+          possibly even hit the ground (but don’t harm anyone on the ground).
+          knock electrons off of atoms and molecules in our atmosphere (ionizing
+          them), altering high-frequency radio communication. pierce deep into
+          satellite hardware, degrading solar panels and damaging circuits. pass
+          through human tissue, posing radiation risks to astronauts in space or
+          to crewmembers and passengers in high-flying polar aircraft.
+        </p>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <p>
+        &copy; <span id="year"></span> Space Weather Project. All rights
+        reserved.
+      </p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

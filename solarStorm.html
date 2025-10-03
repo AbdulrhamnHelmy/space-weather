@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Satellites & Space Weather</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div>
+        <img class="logo_nasa" src="images\logo_nasa.png" alt="" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#effects">Effects</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero sub-hero">
+      <h1>What is a solar storm?</h1>
+      <p class="bbb">
+        A solar storm is a sudden explosion of particles, energy, magnetic
+        fields, and material blasted into the solar system by the Sun.
+      </p>
+    </section>
+
+    <!-- Content -->
+    <section class="content-page">
+      <img src="images/march-14-picturing-magnetic-field-lines-2.webp" alt="" />
+      <div>
+        <h3
+          class="h333"
+          style="margin-top: 25px; font-size: 25px; color: #8fe5ff"
+        >
+          What causes a solar storm?
+        </h3>
+        <p>
+          The Sun creates a tangled mess of magnetic fields — kind of like a
+          disheveled head of hair after a fitful night of sleep. These magnetic
+          fields get twisted up as the Sun rotates — with its equator rotating
+          faster than its poles. Solar storms typically begin when these twisted
+          magnetic fields on the Sun get contorted and stretched so much that
+          they snap and reconnect (in a process called magnetic reconnection),
+          releasing large amounts of energy.
+        </p>
+      </div>
+      <div>
+        <h3
+          class="h333"
+          style="margin-top: 25px; font-size: 25px; color: #8fe5ff"
+        >
+          How does a solar storm affect us?
+        </h3>
+        <p>
+          When directed toward Earth, a solar storm can create a major
+          disturbance in Earth’s magnetic field, called a geomagnetic storm,
+          that can produce effects such as radio blackouts, power outages, and
+          beautiful auroras. They do not cause direct harm to anyone on Earth,
+          however, as our planet’s magnetic field and atmosphere protect us from
+          the worst of these storms.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>
+        &copy; <span id="year"></span> Space Weather Project. All rights
+        reserved.
+      </p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
