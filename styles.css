@@ -76,8 +76,8 @@ body {
   animation: fadeIn 1.5s ease-in;
 }
 .hero img {
-  width: 1600px;
-  height: 750px;
+  width: 1450px;
+  height: 600px;
   border-radius: 20px;
   filter: opacity(70%);
 }
@@ -486,4 +486,5 @@ p {
     border-radius: 5px;
   }
 }
+
 
