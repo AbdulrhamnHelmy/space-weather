@@ -12,8 +12,8 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(135deg,
       #3b0a59,
-      #602184,
-      #502065,
+      #441e5a,
+      #764f86,
       #115963,
       #8e24aa);
 
@@ -507,3 +507,4 @@ p {
     border-radius: 5px;
   }
 }
+
